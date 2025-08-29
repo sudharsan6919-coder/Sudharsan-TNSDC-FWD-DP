@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Registration Form</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>📋 Registration Form</h2>
+
+    <form id="regForm">
+
+      <!-- Full Name -->
+
+      <label>Full Name:</label>
+
+      <input type="text" id="fullname" placeholder="Enter your name" required>
+
+      <!-- Email -->
+
+      <label>Email:</label>
+
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <!-- Password -->
+
+      <label>Password:</label>
+
+      <input type="password" id="password" placeholder="Enter password" required minlength="6">
+
+      <!-- Phone Number -->
+
+      <label>Phone Number:</label>
+
+      <input type="tel" id="phone" placeholder="1234567890" required pattern="[0-9]{10}">
+
+      <!-- Date of Birth -->
+
+      <label>Date of Birth:</label>
+
+      <input type="date" id="dob" required>
+
+      <!-- Gender -->
+
+      <label>Gender:</label>
+
+      <select id="gender" required>
+
+        <option value="">-- Select Gender --</option>
+
+        <option value="Male">Male</option>
+
+        <option value="Female">Female</option>
+
+        <option value="Other">Other</option>
+
+      </select>
+
+      <!-- Submit Button -->
+
+      <button type="submit">Register</button>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
